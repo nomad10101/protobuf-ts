@@ -251,8 +251,8 @@ export class GrpcWebFetchTransport implements RpcTransport {
             })
 
             .then(() => {
-                if (!maybeTrailer && maybeMessage)
-                    throw new RpcError(`missing trailers`, GrpcStatusCode[GrpcStatusCode.DATA_LOSS]);
+                //if (!maybeTrailer && maybeMessage)
+                //    throw new RpcError(`missing trailers`, GrpcStatusCode[GrpcStatusCode.DATA_LOSS]);
 
                 // istanbul ignore if - this should be impossible and only here to satisfy TypeScript
                 if (!maybeStatus)
